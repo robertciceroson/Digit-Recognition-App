@@ -1,0 +1,16 @@
+# MNIST dataset
+data/
+
+# Saved model weights
+*.pth
+*.pt
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment
+.env
