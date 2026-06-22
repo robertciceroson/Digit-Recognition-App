@@ -138,7 +138,7 @@ If you are new to neural networks, work through Section 2 carefully — the symb
 ## License
 For educational use as part of the VectorBrainAI AI/ML Bootcamp curriculum.
 ---
-Author
+## Author
 
-Robert C. Son
+**Robert Cicero Son**
 Scrum Master · Process Engineer · Prompt Engineer · Data Analyst · AI/ML Practitioner · CSM · CSPO · AI-Empowered SAFe Agilist · Active DoD Secret Clearance
