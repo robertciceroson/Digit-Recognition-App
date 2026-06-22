@@ -38,7 +38,7 @@ By the end of this notebook you will have:
 ## Project Structure
 
 ```
-Digit_Recognition_APP_fixes_v1.ipynb   ← Main notebook (all sections)
+Digit_Recognition_APP_finalized.ipynb   ← Main notebook (all sections)
 mnist_cnn.pth                          ← Saved CNN weights (generated on first run)
 data/                                  ← MNIST dataset (auto-downloaded on first run)
 ```
@@ -79,7 +79,7 @@ pip install torch torchvision matplotlib numpy ipywidgets ipycanvas
    ```bash
    jupyter notebook
    ```
-4. Open `Digit_Recognition_APP_fixes_v1.ipynb`.
+4. Open Digit_Recognition_APP_finalized.ipynb.
 5. Run all cells top to bottom (**Kernel → Restart & Run All**).
 
 The MNIST dataset (~11 MB) will download automatically on first run into a local `data/` folder.
