@@ -38,8 +38,10 @@ By the end of this notebook you will have:
 ## Project Structure
 
 ```
-Digit_Recognition_APP_finalized.ipynb   ← Main notebook (all sections)
+Digit_Recognition_APP_upgraded.ipynb   ← Main notebook (all sections)
 mnist_cnn.pth                          ← Saved CNN weights (generated on first run)
+requirements.txt                       ← All dependencies
+start.bat                              ← One-click launcher for Windows
 data/                                  ← MNIST dataset (auto-downloaded on first run)
 ```
 
@@ -56,11 +58,17 @@ Python 3.8 or higher is recommended.
 Install all dependencies with:
 
 ```bash
+pip install -r requirements.txt
+```
+
+Or install manually:
+
+```bash
 pip install torch torchvision matplotlib numpy ipywidgets ipycanvas
 ```
 
 | Package | Purpose |
-|---------|---------|
+|---------|---------| 
 | `torch` / `torchvision` | PyTorch framework + MNIST download |
 | `matplotlib` | Image visualization and training plots |
 | `numpy` | From-scratch neural network math (Section 2) |
@@ -73,13 +81,29 @@ pip install torch torchvision matplotlib numpy ipywidgets ipycanvas
 
 ## How to Run
 
+### Option A — One-Click Launch (Windows)
+
+Double-click `start.bat` in the project folder. It will:
+- Check Python is installed
+- Create a virtual environment automatically if one doesn't exist
+- Install all dependencies from `requirements.txt`
+- Launch Jupyter and open `Digit_Recognition_APP_upgraded.ipynb` directly
+
+### Option B — Manual Launch
+
 1. Clone or download this repository.
-2. Install dependencies (see above).
-3. Launch Jupyter:
+2. Install dependencies:
    ```bash
-   jupyter notebook
+   pip install -r requirements.txt
    ```
-4. Open Digit_Recognition_APP_finalized.ipynb.
+3. Enable Jupyter widget extensions:
+   ```bash
+   jupyter nbextension enable --py widgetsnbextension --sys-prefix
+   ```
+4. Launch Jupyter:
+   ```bash
+   jupyter notebook Digit_Recognition_APP_upgraded.ipynb
+   ```
 5. Run all cells top to bottom (**Kernel → Restart & Run All**).
 
 The MNIST dataset (~11 MB) will download automatically on first run into a local `data/` folder.
@@ -137,7 +161,9 @@ If you are new to neural networks, work through Section 2 carefully — the symb
 
 ## License
 For educational use as part of the VectorBrainAI AI/ML Bootcamp curriculum.
+
 ---
+
 ## Author
 
 **Robert Cicero Son**
