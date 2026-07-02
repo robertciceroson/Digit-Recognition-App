@@ -17,6 +17,8 @@ By the end of this notebook you will have:
 - A **learning rate experiment** showing what happens when hyperparameters go wrong
 - An **interactive drawing widget** where you draw a digit and watch the CNN predict it in real time
 
+**[▶ Live Demo — draw a digit and watch the CNN predict it](https://digit-recognition-app-hpkvnqs8qn94rjwd4ydziz.streamlit.app/)**
+
 ---
 
 ## Concepts Covered
