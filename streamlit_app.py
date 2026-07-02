@@ -108,6 +108,11 @@ st.title("🔢 Digit Recognition App")
 st.markdown(
     "Draw a digit (0–9) in the box below, then click **Predict** to see the CNN's answer."
 )
+st.info(
+    "💡 **Tip:** Draw in printed style — not cursive. "
+    "Keep loops closed (especially 6, 8, 9, 0) for best accuracy. "
+    "The model is trained on MNIST, which uses printed handwriting."
+)
 st.markdown("---")
 
 # ── Load / train model ────────────────────────────────────────────────────────
